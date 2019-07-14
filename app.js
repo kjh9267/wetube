@@ -16,6 +16,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(helmet());
 app.use(morgan("dev"));
+app.use((req, res,next) => {console.log('씨발');
+next();
+});
 
 app.get("/", handleHome);
 
