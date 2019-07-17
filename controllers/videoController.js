@@ -1,5 +1,7 @@
+import { videoss } from "../db";
+
 export const home = (req, res) => {
-    res.render("home", { pageTitle: "Home" });
+    res.render("home", { pageTitle: "Home", videoss });
 };
 
 export const search = (req, res) => {
