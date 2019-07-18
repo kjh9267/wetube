@@ -1,14 +1,14 @@
 import { videoss } from "../db";
 
 export const home = (req, res) => {
-    res.render("home", { pageTitle: "Home", videoss });
+    res.render("home", { pageTitle: "Home", videoss});
 };
 
 export const search = (req, res) => {
     const {
         query: {term: searchingBy}
     } = req;
-    res.render("search", {pageTitle: "Search", searchingBy : searchingBy});
+    res.render("search", {pageTitle: "Search", searchingBy : searchingBy, videoss});
 };
 
 export const upload = (req, res) => {
