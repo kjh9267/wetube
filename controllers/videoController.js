@@ -1,14 +1,14 @@
 import routes from "../routes"
 
 export const home = (req, res) => {
-    res.render("home", { pageTitle: "Home", videoss});
+    res.render("home", { pageTitle: "Home", videos});
 };
 
 export const search = (req, res) => {
     const {
         query: {term: searchingBy}
     } = req;
-    res.render("search", {pageTitle: "Search", searchingBy : searchingBy, videoss});
+    res.render("search", {pageTitle: "Search", searchingBy : searchingBy, videos});
 };
 
 export const getUpload = (req, res) => {
@@ -33,8 +33,4 @@ export const editVideo = (req, res) => {
 
 export const deleteVideo = (req, res) => {
     res.render("deleteVideo", {pageTitle: "Delete Video"});
-};
-
-export const videos = (req, res) => {
-    res.render("videos", {pageTitle: "Page Title"});
 };
