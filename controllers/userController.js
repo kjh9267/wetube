@@ -41,7 +41,3 @@ export const editProfile = (req, res) => {
 export const changePassword = (req, res) => {
     res.render("changePassword", {pageTitle: "Change Password"});
 };
-
-export const users = (req, res) => {
-    res.render("users", {pageTitle: "Users"});
-};
