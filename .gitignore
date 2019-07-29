@@ -87,6 +87,8 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
+.idea
+.vs
 package-lock.json
 uploads
 static
